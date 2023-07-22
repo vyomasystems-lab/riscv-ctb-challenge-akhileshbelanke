@@ -1,4 +1,4 @@
-# See https://gitlab.com/vyoma_systems/common/-/blob/main/LICENSE.vyoma for more details
+# See https://gitlab.com/vyoma_systems/common/-/blob/main/LICENSE.vyoma for more details 
  
 #include "riscv_test.h"
 #include "test_macros.h"
