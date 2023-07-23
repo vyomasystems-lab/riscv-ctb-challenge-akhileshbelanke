@@ -21,11 +21,11 @@ loop:
   add t4, t1, t2
   addi t0, t0, 12
   addi t6, t6, 1
-  beq t5, t6, test_ends
+  beq t5, t6, test_end
   beq t3, t4, loop        # check if sum is correct
   j fail
 
-test_ends:
+test_end:
 
 TEST_PASSFAIL
 
