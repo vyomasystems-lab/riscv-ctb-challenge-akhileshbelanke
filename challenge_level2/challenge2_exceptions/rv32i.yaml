@@ -23,7 +23,7 @@ priv-mode:
 #                           
 # ---------------------------------------------------------------------------------
 general:
-  total_instructions: 100
+  total_instructions: 5000
   regs_not_use: x1,x2
   custom_trap_handler: false
   code_start_address: 0x80000000
@@ -41,8 +41,8 @@ isa-instruction-distribution:
   rel_sys.csr: 0
   rel_rv32i.ctrl: 1
   rel_rv32i.compute: 10
-  rel_rv32i.data: 5
-  rel_rv32i.fence: 0
+  rel_rv32i.data: 10
+  rel_rv32i.fence: 10
   rel_rv64i.compute: 0
   rel_rv64i.data: 0
   rel_rv32i.zba: 0
@@ -62,7 +62,7 @@ isa-instruction-distribution:
   rel_rv64i.zbr: 0
   rel_rv32i.zbt: 0
   rel_rv64i.zbt: 0
-  rel_rv32m: 0
+  rel_rv32m: 10
   rel_rv64m: 0
   rel_rv32a: 0
   rel_rv64a: 0
@@ -179,10 +179,10 @@ exception-generation:
   ecause00: 0
   ecause01: 0
   ecause02: 1
-  ecause03: 0
-  ecause04: 0
-  ecause05: 0
-  ecause06: 0
+  ecause03: 1
+  ecause04: 1
+  ecause05: 1
+  ecause06: 1
   ecause07: 0
   ecause08: 0
   ecause09: 0
